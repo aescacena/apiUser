@@ -145,33 +145,33 @@ zipp==3.6.0
 git clone https://github.com/aescacena/apiUser.git
 ```
 
-2. Nos posicionamos en el directorio:
+2. Go to directory:
 
 ```
 cd apiUser
 ```
 
-3. Instalamos *pip* para poder instalar paquetes en python e instalar *virtualenv* como entorno virtual.
+3. Install * pip * to be able to install packages in python and install * virtualenv * as a virtual environment.
 
 ```
 sudo apt install python-pip
 sudo pip install virtualenv
 ```
 
-4. Creamos entorno virtual y lo activamos
+4. Create virtual environment and activate it
 
 ```
-virtualenv -p python3 venv
-source venv/bin/activate
+python3 -m venv env
+source env/bin/activate
 ```
 
-5. Instalamos librerías indicadas en fichero requirements.txt
+5. Install libraries indicated in the requirements.txt file
 
 ```
-sudo venv/bin/pip install -r requirements.txt
+sudo env/bin/pip install -r requirements.txt
 ```
 
-6. Ejecutamos aplicación
+6. Run application
 
 ```
 python3 users/main.py
