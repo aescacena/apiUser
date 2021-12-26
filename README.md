@@ -9,7 +9,7 @@
 
 # Database <a name="database"></a>
 
-La base de datos contiene la tabla users, esta contiene los siguientes campos:
+The database contains the users table, it contains the following fields:
 
 * `id`: INTEGER PRIMARY KEY AUTOINCREMENT
 * `name`: TEXT NOT NULL
@@ -21,7 +21,7 @@ La base de datos contiene la tabla users, esta contiene los siguientes campos:
 
 ## GET /users
 
-Obtiene todos los usuarios
+Gets all users
 
 **Response**
 
@@ -46,6 +46,8 @@ Obtiene todos los usuarios
 
 ## POST /user
 
+Add user with the indicated parameters
+
 **Parameters**
 
 |          Name | Required |  Type   |
@@ -64,7 +66,7 @@ True
 
 ## DELETE /user/<user_name>
 
-Elimina de base de datos el usuario recibido como parámetro
+Removes the user received as a parameter from the database
 
 **Parameters**
 
@@ -79,6 +81,8 @@ True
 ```
 
 ## GET /user/<user_name>
+
+Get user indicated by parameter
 
 **Parameters**
 
@@ -102,7 +106,7 @@ True
 
 # Requirements <a name="requirements"></a>
 
-Incluimos las siguientes librerías
+Used libraries
 
 ```python
 alembic==1.7.5
